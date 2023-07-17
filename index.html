@@ -11,11 +11,19 @@
     <style>
         .container {
             /* Remove the line below if you want a wider page */
-            margin: 0 auto; /* Center the container horizontally */
-           width: 55%; /* Set the desired width of the container */
-          
-          
+          margin: 0 auto; /* Center the container horizontally */
+          width: 55%; /* Set the desired width of the container */
           color: #000000;
+        }
+
+        @media (max-width: 768px) {
+        .container {
+          width: 100%; /* Change the width to 100% for mobile devices */
+          }
+
+        .container img {
+          max-width: 100%; /* Make the image responsive */
+          height: auto; /* Maintain the image's aspect ratio */
         }
 
         .title{
